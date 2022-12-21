@@ -32,7 +32,7 @@ const GraphQL = () => {
             body: payload,
         }
 
-        fetch(`/graph`, requestOptions)
+        fetch(`${process.env.REACT_APP_BACKEND}/graph`, requestOptions)
             .then((response) => response.json())
             .then((response) => {
                 console.log(response);
@@ -79,7 +79,7 @@ const GraphQL = () => {
             body: payload,
         }
 
-        fetch(`/graph`, requestOptions)
+        fetch(`${process.env.REACT_APP_BACKEND}/graph`, requestOptions)
             .then((response) => response.json())
             .then((response) => {
                 console.log(response);
